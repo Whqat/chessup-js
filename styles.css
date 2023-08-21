@@ -1,0 +1,77 @@
+body {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lato";
+    color: #fafafa
+}
+
+#gameboard {
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: relative;
+
+}
+
+
+
+.square svg {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    position: relative;
+    z-index: -9;
+    pointer-events: none !important;
+    cursor: none !important;
+    opacity: 1 !important;
+}
+
+.square svg path {
+    position: relative;
+    z-index: -10;
+    pointer-events: none !important;
+    cursor: none !important;
+    opacity: 1 !important;
+}
+
+
+.piece {
+    z-index: 9;
+    opacity: 1 !important;
+    cursor: grab !important;
+}
+
+.lightSquare {
+    background-image: linear-gradient(rgb(147, 85, 255), rgb(155, 95, 250))
+}
+
+#info-display {
+    margin: 0;
+}
+
+#player-display {
+    margin: 10px;
+}
+
+.darkSquare {
+    background-image: linear-gradient(rgb(115, 0 , 255), rgb(100, 5, 250))
+}
+
+.black {
+    fill: rgb(12, 3, 0);
+}
+
+.white {
+    fill: rgb(255, 249, 229);
+}
